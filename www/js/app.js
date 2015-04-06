@@ -1,6 +1,7 @@
 var React = require('react');
 var WatchStock = require('./comps/WatchStock');
 var StockTable = require('./comps/StockTable');
+var feed = require('./feed-socketio');
 
 var HomePage = React.createClass({
     getInitialState: function() {

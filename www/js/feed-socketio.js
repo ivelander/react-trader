@@ -1,4 +1,4 @@
-feed = (function () {
+var feed = (function () {
 
     var socket = io();
 
@@ -15,3 +15,5 @@ feed = (function () {
     };
 
 }());
+
+module.exports = feed;
