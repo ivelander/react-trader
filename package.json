@@ -4,12 +4,18 @@
   "description": "Trader Desktop",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify -e www/js/app.js -t reactify -o www/js/bundle.js -d"
   },
   "author": "Christophe Coenraets <ccoenraets@gmail.com> (http://coenraets.org/)",
+  "contributors": ["Isaac Velander <ivelander@gmail.com>"],
   "license": "MIT",
   "dependencies": {
     "express": "^4.12.3",
-    "socket.io": "^1.3.5"
+    "socket.io": "^1.3.5",
+    "react": "^0.13.1"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "reactify": "^1.1.0"
   }
 }
